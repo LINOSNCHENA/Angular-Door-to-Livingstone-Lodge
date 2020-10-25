@@ -1,0 +1,45 @@
+.main-card {
+    border-radius: 0 !important;
+}
+.main-title {
+    text-shadow: 3px 3px 5px #0b0a09fc;
+    font-family: 'Akronim', cursive;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #0fa42ce8;
+    letter-spacing: 0.4rem;
+    margin-top: 2rem;
+}
+
+.card-img-overlay {
+    background:#000000c2;;
+    text-align: center;
+    padding: 53px;
+}
+
+.card-image {
+    height: calc(100vh - 140px);
+}
+.card-deck {
+    margin: 0;
+}
+
+@media only screen and (min-width: 776px) {
+    .main-card {
+    height: 60vh;
+}
+.main-title {
+    margin-top: 3rem;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.card-img-overlay {
+    padding: 36px;
+    margin: 70px;
+    border-radius: 172px;
+}
+
+.card-image {
+    height: 94.7vh;
+}
+}
