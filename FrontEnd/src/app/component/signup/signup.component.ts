@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 
 @Component({
@@ -11,7 +11,6 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   error: boolean = false;
   errorMessage: String = "";
   dataLoading: boolean = false;
@@ -20,12 +19,10 @@ export class SignupComponent implements OnInit {
 
   constructor(
     private _ApiService: ApiService,
-    private _route: Router
+   // private _route: Router
   ) {}
 
- 
-
-  setUser(formData) {
+  setUser(formData: any) {
     this.dataLoading = true;
     this.querySubscription = this._ApiService.setUser(formData).subscribe((res) => {
       if (res["errorCode"] > 0) {
