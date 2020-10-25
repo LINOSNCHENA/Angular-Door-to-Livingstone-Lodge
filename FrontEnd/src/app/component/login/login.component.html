@@ -1,5 +1,5 @@
 <main role="main" class="col-lg-4 col-md-6 col-sm-10 col-xs-12 m-auto">
-    <h1>Angular Mean stack Demo</h1>
+    <h1> PHONEBOOK CONTACTS APPLICATION CANSOLE </h1>
     <div>
         <h1 class="mt-5">&nbsp;</h1>
         <h5 class="mt-5">Login</h5>
@@ -11,8 +11,8 @@
         <span class="lead">
             <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
                 <div class="form-label-group">
-                    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address"
-                        #inputEmail="ngModel" autofocus required email ngModel>
+                    <input type="email" name="inputEmail" id="inputEmail" class="form-control"
+                        placeholder="Email address" #inputEmail="ngModel" autofocus required email ngModel>
                 </div>
                 <div class="alert alert-danger" role="alert"
                     *ngIf="inputEmail.invalid && (inputEmail.dirty || inputEmail.touched)">
@@ -20,8 +20,8 @@
                 </div>
                 <br />
                 <div class="form-label-group">
-                    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password"
-                        #inputPassword="ngModel" required minlength="3" maxlength="20" ngModel>
+                    <input type="password" name="inputPassword" id="inputPassword" class="form-control"
+                        placeholder="Password" #inputPassword="ngModel" required minlength="3" maxlength="20" ngModel>
                 </div>
                 <div class="alert alert-danger" role="alert"
                     *ngIf="inputPassword.invalid && (inputPassword.dirty || inputPassword.touched)">
