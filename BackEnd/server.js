@@ -86,4 +86,8 @@ module.exports = router;
 ///////////////////////////////////////////////// PRODUCTS
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server is listening on port A ${PORT}`))
+
+const PORT1 = process.env.PORT || 2000;
+// app.listen(PORT1, () => console.log(`Server is listening on port B ${PORT1}`))
+// app.listen(PORT, () => console.log(`Server is listening on port C ${PORT}`))

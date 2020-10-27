@@ -14,7 +14,7 @@ export class ProductlistComponent implements OnInit {
   rows: Product[] = [];
 
   p: number = 1;
-  limit: number = 5;
+  limit: number = 2;
   total: number;
 
   constructor(
@@ -24,7 +24,7 @@ export class ProductlistComponent implements OnInit {
 
   ngOnInit() {
     this.title = 'Products';
-    // this.getProducts(this.p);
+    this.getProducts(this.p);
   }
 
   getProducts(p: number) {
@@ -42,19 +42,19 @@ export class ProductlistComponent implements OnInit {
     this.getProducts(this.p);
   }
 
-  deleteProduct(id: number) {
-    if (confirm('Are you sure want to delete?')) {
-      this.productService.deleteProduct(id).subscribe(
-        result => {
-          console.log(result);
-          if (!result.error) {
-            this.rows = this.rows.filter(item => item.id != id)
-          } else {
-            alert('Some thingh went wrong!');
-          }
-        }
-      )
-    }
-  }
+  // deleteProduct(id: number) {
+  //   if (confirm('Are you sure want to delete?')) {
+  //     this.productService.deleteProduct(id).subscribe(
+  //       result => {
+  //         console.log(result);
+  //         if (!result.error) {
+  //           this.rows = this.rows.filter(item => item.id != id)
+  //         } else {
+  //           alert('Some thingh went wrong!');
+  //         }
+  //       }
+  //     )
+  //   }
+  // }
 
 }
