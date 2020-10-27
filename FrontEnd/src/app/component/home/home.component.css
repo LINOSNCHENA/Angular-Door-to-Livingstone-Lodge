@@ -28,6 +28,9 @@
     .main-card {
     height: 60vh;
 }
+    .main-cardx {
+    height: 30vh;
+}
 .main-title {
     margin-top: 3rem;
     font-weight: bolder;
@@ -42,4 +45,5 @@
 .card-image {
     height: 94.7vh;
 }
+
 }
