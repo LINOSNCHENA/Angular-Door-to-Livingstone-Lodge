@@ -19,7 +19,7 @@ describe('CreateproductComponent', () => {
     fixture.detectChanges();
   });
 
-  it('PRODUCTCREATE1-should create', () => {
-    expect(component).toBeTruthy();
-  });
+  // it('PRODUCTCREATE1-should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
 });

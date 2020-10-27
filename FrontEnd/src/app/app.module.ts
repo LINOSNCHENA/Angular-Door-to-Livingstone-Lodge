@@ -15,6 +15,10 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { ProductlistComponent } from './component/product/productlist/productlist.component';
 import { ModelsComponent } from './component/product/models/models.component';
 import { CreateproductComponent } from './component/product/createproduct/createproduct.component';
+import { ServicesService } from './component/product/service/services.service';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpErrorHandler } from './component/product/service/http-error-handler.services';
+import { MessageService } from './component/product/service/message.service';
 
 @NgModule({
   declarations: [
@@ -27,11 +31,18 @@ import { CreateproductComponent } from './component/product/createproduct/create
     SignupComponent,
     ProductlistComponent,
     ModelsComponent,
-    CreateproductComponent
-  ],
+    CreateproductComponent,
+   ],
   imports: [BrowserModule, AppRoutingModule, 
-    FormsModule, ReactiveFormsModule, HttpClientModule],
-  providers: [AuthGuardService],
+    FormsModule, ReactiveFormsModule, HttpClientModule,
+    NgxPaginationModule,
+
+
+],
+  providers: [AuthGuardService, ServicesService,
+  MessageService,HttpErrorHandler,
+
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
