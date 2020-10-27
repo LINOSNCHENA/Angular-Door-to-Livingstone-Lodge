@@ -12,6 +12,9 @@ import { SignupComponent } from './component/signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuardService } from './services/auth-guard.service';
+import { ProductlistComponent } from './component/product/productlist/productlist.component';
+import { ModelsComponent } from './component/product/models/models.component';
+import { CreateproductComponent } from './component/product/createproduct/createproduct.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { AuthGuardService } from './services/auth-guard.service';
     DashboardComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ProductlistComponent,
+    ModelsComponent,
+    CreateproductComponent
   ],
   imports: [BrowserModule, AppRoutingModule, 
     FormsModule, ReactiveFormsModule, HttpClientModule],
