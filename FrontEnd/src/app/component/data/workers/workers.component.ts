@@ -28,7 +28,7 @@ export class WorkersComponent implements OnInit {
     name: new FormControl(''),
     department: new FormControl(''),
     salary: new FormControl(''),
-    is_active: new FormControl(''),
+    isactive: new FormControl(''),
     createdat: new FormControl('')
 
   });

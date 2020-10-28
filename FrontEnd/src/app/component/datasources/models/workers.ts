@@ -5,7 +5,7 @@ export interface Worker {
     sku: string;
     department: string;
     salary: string;
-    is_active: string;
+    isactive: string;
     created: string;
 
 }

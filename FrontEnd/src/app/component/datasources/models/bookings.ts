@@ -7,6 +7,6 @@ export interface Booking{
 
      department: string;
     salary: string;
-    is_active: string;
+    isactive: string;
     created: string;
 }

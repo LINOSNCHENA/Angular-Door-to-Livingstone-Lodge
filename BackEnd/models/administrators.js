@@ -11,7 +11,7 @@ pool.getConnection(function (error, connection) {
   if (!!error) {
     console.log(error);
   } else {
-    console.log("Connected USERS!:)");
+    console.log("Connected ADMIN!:)");
   }
 });
 
@@ -28,7 +28,7 @@ connection.getConnection(function (error, connection) {
   if (!!error) {
     console.log(error);
   } else {
-    console.log("Connected CUSTOMERS!:)");
+    console.log("Connected CARE-GIVER!:)");
   }
 });
 module.exports = connection;

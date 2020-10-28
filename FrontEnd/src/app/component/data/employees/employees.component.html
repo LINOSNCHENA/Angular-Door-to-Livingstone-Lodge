@@ -40,27 +40,25 @@
         <form [formGroup]="profileForm">
           <input type="hidden" class="form-control" formControlName="id">
           <div class="form-group ">
-            <label for="name"> FirstName : </label>
+            <label for="name"> FullName : </label>
             <input type="text" class="form-control" id="name" formControlName="name">
           </div>
           <div class="form-group ">
-            <label for="office"> LastName : </label>
+            <label for="office"> Office : </label>
             <input type="text" class="form-control" id="office" formControlName="office">
           </div>
           <div class="form-group ">
             <label for="email"> Email : </label>
             <input type="email" class="form-control" id="email" formControlName="email">
           </div>
-          <div class="form-group ">
-            <label for="pwd">Password : </label>
-            <input type="createdat" class="form-control" id="pwd" formControlName="createdat">
-          </div>
-          <div class="form-group ">
+           <div class="form-group ">
             <label for="mobile"> Mobile : </label>
             <input type="number" class="form-control" id="mobile" formControlName="mobile">
           </div>
 
-          <br><br>
+          <br>
+          <br>
+
           <div class="form-group ">
             <button type="submit" *ngIf="btnsubmit" (click)="onsubmit()" class="btn btn-primary">Submit</button>
 
@@ -74,7 +72,7 @@
     <div class="row col-sm-1"></div>
     <div class="row col-sm-6">
       <div>
-        <h5>USER'S DETAILS</h5>
+        <h3> DETAILS OF ADMINISTRATORS </h3>
       </div>
       <table class="table  table-striped table-bordered">
         <thead class="table-primary">

@@ -40,24 +40,20 @@
         <form [formGroup]="profileForm">
           <input type="hidden" class="form-control" formControlName="id">
           <div class="form-group ">
-            <label for="name"> FirstName : </label>
+            <label for="name"> FullName : </label>
             <input type="text" class="form-control" id="name" formControlName="name">
           </div>
           <div class="form-group ">
-            <label for="department"> LastName : </label>
+            <label for="department"> Department : </label>
             <input type="text" class="form-control" id="department" formControlName="department">
           </div>
           <div class="form-group ">
-            <label for="salary"> Email : </label>
+            <label for="salary"> Salary : </label>
             <input type="salary" class="form-control" id="salary" formControlName="salary">
           </div>
           <div class="form-group ">
-            <label for="pwd">Password : </label>
-            <input type="is_active" class="form-control" id="pwd" formControlName="is_active">
-          </div>
-          <div class="form-group ">
-            <label for="createdat"> Mobile : </label>
-            <input type="number" class="form-control" id="createdat" formControlName="createdat">
+            <label for="pwd">Current : </label>
+            <input type="isactive" class="form-control" id="pwd" formControlName="isactive">
           </div>
 
           <br><br>
@@ -74,7 +70,7 @@
     <div class="row col-sm-1"></div>
     <div class="row col-sm-6">
       <div>
-        <h5>USER'S DETAILS</h5>
+        <h3> DETAILS OF WORKERS </h3>
       </div>
       <table class="table  table-striped table-bordered">
         <thead class="table-primary">
@@ -92,7 +88,7 @@
             <td>{{ workers.name }}</td>
             <td>{{ workers.department }}</td>
             <td>{{ workers.salary}}</td>
-            <td>{{ workers.is_active}}</td>
+            <td>{{ workers.isactive}}</td>
             <td>{{ workers.createdat }}</td>
             <td>
               <a (click)=" deletefnc(workers.id)" class="btn alert-danger btn-sm"> Delete </a>&nbsp;

@@ -29,7 +29,7 @@ export class BookingsComponent implements OnInit {
     name: new FormControl(''),
     town: new FormControl(''),
     hotel: new FormControl(''),
-    is_active: new FormControl(''),
+    isactive: new FormControl(''),
     createdat: new FormControl('')
   });
 
