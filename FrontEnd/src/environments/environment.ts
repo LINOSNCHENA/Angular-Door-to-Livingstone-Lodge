@@ -4,10 +4,13 @@
 
 export const environment = {
   production: false,
+  apiUrl: 'http://localhost:3000',
+  // url: "http://localhost:4210",
+  url1: "http://localhost:4210",
+  url2: "http://localhost:4220",
+  url3: "http://localhost:4230",
 
- apiUrl: 'http://localhost:3000'
- 
- };
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
@@ -17,9 +20,3 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-
-
-export const environment2 = {
-  production: false,
-  apiUrl: 'http://localhost:3000'
-};

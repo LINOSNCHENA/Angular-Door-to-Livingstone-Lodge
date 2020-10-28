@@ -1,4 +1,5 @@
-const pool = require('./db_pool_conn');
+//const pool = require('./db_pool_conn');
+const pool= require('./admin_generator');
 
 var password = require('password-hash-and-salt');
 const jwt = require('jsonwebtoken');

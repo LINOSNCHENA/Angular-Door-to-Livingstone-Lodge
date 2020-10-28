@@ -11,14 +11,18 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthGuardService } from './services/auth-guard.service';
-import { ProductlistComponent } from './component/product/productlist/productlist.component';
-import { ModelsComponent } from './component/product/models/models.component';
-import { CreateproductComponent } from './component/product/createproduct/createproduct.component';
-import { ServicesService } from './component/product/service/services.service';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { HttpErrorHandler } from './component/product/service/http-error-handler.services';
-import { MessageService } from './component/product/service/message.service';
+
+import { WorkersComponent } from './component/data/workers/workers.component';
+import { EmployeesComponent } from './component/data/employees/employees.component';
+import { BookingsComponent } from './component/data/bookings/bookings.component';
+import { HttpErrorHandler } from './component/datasources/serviceApi/http-error-handler.services';
+import { MessageService } from './component/datasources/serviceApi/message.service';
+import { AuthGuardService } from './servicesUtilities/auth-guard.service';
+
+import { BkgserviceService } from './component/datasources/serviceApi/bkgservice.service';
+import { EmpserviceService } from './component/datasources/serviceApi/empservice.service';
+import { WrkserviceService } from './component/datasources/serviceApi/wrkservice.service';
 
 @NgModule({
   declarations: [
@@ -29,20 +33,18 @@ import { MessageService } from './component/product/service/message.service';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    ProductlistComponent,
-    ModelsComponent,
-    CreateproductComponent,
-   ],
-  imports: [BrowserModule, AppRoutingModule, 
+    BookingsComponent,
+    WorkersComponent,
+    EmployeesComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule,
     FormsModule, ReactiveFormsModule, HttpClientModule,
     NgxPaginationModule,
-
-
-],
-  providers: [AuthGuardService, ServicesService,
-  MessageService,HttpErrorHandler,
-
-],
+  ],
+  providers: [AuthGuardService,
+    MessageService, HttpErrorHandler, 
+    BkgserviceService,EmpserviceService, WrkserviceService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

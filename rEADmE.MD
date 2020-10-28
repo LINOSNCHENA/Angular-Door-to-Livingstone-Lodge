@@ -2,10 +2,20 @@
 
 # Tech stack
 1. Angular 10
-2. SpringBoot
-3. NodeJs
+2. NodeJs
+3. SpringBoot
 
 ## Commands
 
+cd FRONDEND
+
+npm install
 npm start
 npm test
+
+cd BACKEND
+
+npm install
+npm install nodemon -g
+nodemon start
+npm start
