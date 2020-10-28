@@ -43,7 +43,7 @@ app.get('/beditData/:id', function (req, res) {
     connection.query("select *  FROM `bookings` where id =" + id, function (err, results) {
         if (err) throw err;
         res.send(results);
-        console.log({ "msg":"Successfully 1 Selected Booking!" });
+        console.log({ "msg":"Successfully Identified Booking!" });
     });
 
 });
@@ -59,7 +59,7 @@ app.post('/bupdateData/:id', function (req, res) {
              if (err) throw err;if (err) throw err;
         res.send({ "msg": "Successfully Updated Booking" });
         console.log({ "msg":"Successfully Updated Booking!" });
-        console.log("Successfully222222222 Updated Booking!");
+     //   console.log("Successfully222222222 Updated Booking!");
     });
 });
 
@@ -175,5 +175,5 @@ app.get('/wdeletedata/:id', function (req, res) {
 });
 
 
-const PORT1 = process.env.PORT1 || 5250;
+const PORT1 = process.env.PORT1 || 4210;
 app.listen(PORT1, () => console.log(`Server2 is listening on port B ${PORT1}`))

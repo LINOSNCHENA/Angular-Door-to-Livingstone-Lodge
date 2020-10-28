@@ -13,10 +13,10 @@ const routes: Routes = [
   { path: "", redirectTo: "login", pathMatch: "full" },
   { path: "login", component: LoginComponent },
   { path: "signup", component: SignupComponent },
-  { path: "home", component: HomeComponent, canActivate: [AuthGuard] },
-  { path: "bookings", component: BookingsComponent},
-  { path: "employees", component: EmployeesComponent},
-  { path: "workers", component: WorkersComponent},
+  { path: "home", component: HomeComponent, canActivate: [AuthGuard] }, //1
+  { path: "bookings", component: BookingsComponent, canActivate: [AuthGuard]},//2
+  { path: "employees", component: EmployeesComponent, canActivate: [AuthGuard]},//3
+  { path: "workers", component: WorkersComponent, canActivate: [AuthGuard]},//4
   { path: "dashboard",  component: DashboardComponent,    canActivate: [AuthGuard],  },
   { path: "**", redirectTo: "/login", pathMatch: "full" },];
 
