@@ -1,31 +1,39 @@
-SET time_zone = "+00:00";
+SET time_zone
+= "+02:00";
 use presly;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users`
 (
-
     id serial AUTO_INCREMENT PRIMARY KEY,
-    fname VARCHAR(70) default 'firstMalema',
-    lname VARCHAR(70) default 'lastname',
-    email VARCHAR(70) NOT NULL,
-    mobile VARCHAR(70) default 'm7895766895N',
-    gender VARCHAR(76) default 'sexFemale',
-    password VARCHAR(650) NOT NULL,
+    fname VARCHAR
+(70) default 'firstMalema',
+    lname VARCHAR
+(70) default 'lastname',
+    email VARCHAR
+(70) NOT NULL,
+    mobile VARCHAR
+(70) default 'm7895766895N',
+    gender VARCHAR
+(76) default 'FemaleSex',
+    password VARCHAR
+(650) NOT NULL,
 
-    office VARCHAR(70) default 'o83646183471n',
+    office VARCHAR
+(70) default 'o83646183471n',
     createdat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE(email,password)
+    UNIQUE
+(email,password)
 );
 
 INSERT INTO users
-    (fname,email, password, lname)
+  (fname,email, password, lname)
 VALUES
-    ('LINOS MARVIN', '1nikolasmarvin@yahoo.com', '+230775263158', "Nikolas"),
-    ('NIKOLAS LINOS', '1Lorenamarvin@yahoo.com', '+230775263158', "nikolas"),
-    ('LORENA MCHENA', '1LeonCathy@yahoo.com', '+230775263158', "'nikola"),
-    ('LEON MARVIN', '1cathyNoria@yahoo.com', '+230775263158', "nikolas");
+  ('Marvin', 'nikolas.marvin@yahoo.com', 'M30775263158', "Nikolas"),
+  ('Nikolas', 'Lorena.marvin@gmail.com', 'L230775263158', "Leon"),
+  ('Marvin', 'Leon.nathy@ygoogle.com', 'N230775263158', "'Lorena"),
+  ('Leon', 'cathy.Noria@yahoo.com', 'W230775263158', "Marvin");
 
 
 ----------------------------------------------
@@ -33,12 +41,17 @@ VALUES
 --
 
 drop table if exists `bookings`;
-CREATE TABLE `bookings` (
+CREATE TABLE `bookings`
+(
   `id` serial AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(70) DEFAULT NULL,
-  `town` varchar(70) DEFAULT NULL,
-  `hotel`varchar(70) DEFAULT NULL,
-  `isactive` varchar(71) DEFAULT NULL,
+  `name` varchar
+(70) DEFAULT NULL,
+  `town` varchar
+(70) DEFAULT NULL,
+  `hotel`varchar
+(70) DEFAULT NULL,
+  `isactive` varchar
+(71) DEFAULT NULL,
   `createdat` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -46,24 +59,29 @@ CREATE TABLE `bookings` (
 -- Dumping data for table `bookings`
 --
 
-INSERT INTO `bookings` (`id`, `name`, `town`, `hotel`, `isactive`, `createdat`) VALUES
-(1, 'Lorena', 'Vasteras', '599.00', 1, '2020-05-12 14:03:41'),
-(3, 'Leon', 'Prague', 'Intercontinetal', 1, '2020-05-12 14:03:41'),
-(4, 'Marvin', 'Prague', '19599.00', 1, '2020-05-12 14:03:41'),
-(5, 'Nikolas', 'Amsterdam', '29599.00', 1, '2020-05-12 14:03:41'),
-(6, 'Xstina', 'Vasteras', 'Manda-Hill', 1, '2020-05-12 14:03:41');
+INSERT INTO `bookings` (`name`,`town`, `hotel`, `isactive`) VALUES
+('Lorena', 'Vasteras', 'Mabvuto-H', 2011),
+('Leon', 'Prague', 'Intercontinetal', 2012),
+('Marvin', 'Prague', 'Booking-3', 2013),
+('Nikolas', 'Amsterdam', 'Booking-4', 2014),
+('Xstina', 'Vasteras', 'Manda-Hill', 2015);
 
 ----------------------------------------------
 -- Table structure for table `employees`
 --
 
 DROP TABLE IF EXISTS `employees`;
-CREATE TABLE `employees` (
+CREATE TABLE `employees`
+(
   `id` serial AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(70) DEFAULT NULL,
-  `mobile` varchar(70) DEFAULT NULL,
-  `office` varchar(70) DEFAULT NULL,
-  `email` varchar(70) DEFAULT NULL,
+  `name` varchar
+(70) DEFAULT NULL,
+  `mobile` varchar
+(70) DEFAULT NULL,
+  `office` varchar
+(70) DEFAULT NULL,
+  `email` varchar
+(70) DEFAULT NULL,
   `createdat` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -71,25 +89,30 @@ CREATE TABLE `employees` (
 -- Dumping data for table `employees`
 --
 
-INSERT INTO `employees` (`id`, `name`, `mobile`, `office`, `email`, `createdat`) VALUES
-(1, 'Habenzu', 'watch', '599.00', 1, '2020-05-12 14:03:41'),
-(3, 'James', 'mobile', '9599.00', 1, '2020-05-12 14:03:41'),
-(4, 'Lukus', 'tv', '19599.00', 1, '2020-05-12 14:03:41'),
-(5, 'Ben', 'laptop', '29599.00', 1, '2020-05-12 14:03:41'),
-(6, 'Kennedy', 'bag', '599.00', 1, '2020-05-12 14:03:41'),
-(7, 'Lushana', 'shoes', '1599.00', 1, '2020-05-12 14:03:41');
+INSERT INTO `employees` (`id`,`name`, `mobile`, `email`, `office`) VALUES
+(1, 'Habenzu', '920202020', 'benzo@ben.com', 2001),
+(3, 'James', 'm9284857848', 'james@yahoo.com', 2002),
+(4, 'Lukus', '3473473473', 'lukus@yahoo.com', 2003),
+(5, 'BenJamin', '3473463463', 'benjamin@gmai.com', 2004),
+(6, 'Kennedy', '34783473573', 'kenedy@ken.cok', 2005),
+(7, 'Lushana', '3734745734', 'lushana@lush.com', 2006);
 
 ----------------------------------------------
 -- Table structure for table `workers`
 --
 
 drop table if exists workers;
-CREATE TABLE `workers` (
+CREATE TABLE `workers`
+(
   `id` serial AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(70) DEFAULT NULL,
-  `department` varchar(70) DEFAULT NULL,
-  `salary` varchar(70) DEFAULT NULL,
-  `isactive` varchar(70) DEFAULT NULL,
+  `name` varchar
+(70) DEFAULT NULL,
+  `department` varchar
+(70) DEFAULT NULL,
+  `salary` varchar
+(70) DEFAULT NULL,
+  `isactive` varchar
+(70) DEFAULT NULL,
   `createdat` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -97,19 +120,22 @@ CREATE TABLE `workers` (
 -- Dumping data for table `workers`
 --
 
-INSERT INTO `workers` (`id`, `name`, `department`, `salary`, `isactive`, `createdat`) VALUES
-(1, 'Kavumbu', 'SocialWorker', '599.00', 1, '2020-05-12 14:03:41'),
-(3, 'Drga', 'Professor', '9599.00', 1, '2020-05-12 14:03:41'),
-(4, 'Henang', 'Televisionist', '19599.00', 1, '2020-05-12 14:03:41'),
-(5, 'Mutinga', 'Academic', '29599.00', 1, '2020-05-12 14:03:41'),
-(6, 'Nawa', 'Friend', '599.00', 1, '2020-05-12 14:03:41'),
-(7, 'Grace', 'Family', '1599.00', 1, '2020-05-12 14:03:41'),
-(8, 'Antie Anna', 'Family', '1599.00', 1, '2020-05-12 14:03:41');
+INSERT INTO `workers` (`id`,`name`, `department`, `salary`, `isactive`) VALUES
+(1, 'Kavumbu', 'SocialWorker', '599.00', 1981),
+(3, 'Drga', 'Professor', '9599.00', 1982),
+(4, 'Henang', 'Televisionist', '19599.00', 1983),
+(5, 'Mutinga', 'Academic', '29599.00', 1984),
+(6, 'Nawa', 'Friend', '599.00', 1985),
+(7, 'Grace', 'Family', '1599.00', 1986),
+(8, 'Antie Anna', 'Family', '1599.00', 1987);
 
 -- --------------------------------------------------------
-select * from bookings;
+select *
+from bookings,employees,workers;
 -- --------------------------------------------------------
-select * from employees;
+select *
+from employees;
 -- --------------------------------------------------------
-select * from workers;
+select *
+from workers;
 -- --------------------------------------------------------
