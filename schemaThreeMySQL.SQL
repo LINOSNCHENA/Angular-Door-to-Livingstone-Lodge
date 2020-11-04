@@ -133,9 +133,4 @@ INSERT INTO `workers` (`id`,`name`, `department`, `salary`, `isactive`) VALUES
 select *
 from bookings,employees,workers;
 -- --------------------------------------------------------
-select *
-from employees;
--- --------------------------------------------------------
-select *
-from workers;
--- --------------------------------------------------------
+

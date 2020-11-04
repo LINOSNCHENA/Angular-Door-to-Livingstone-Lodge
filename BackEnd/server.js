@@ -10,10 +10,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.get('/', (req, res) => res.send('AT-Home connection #1 successful!'));
 
-const administrators=require("./managers/validator")
+const administrators = require("./managers/validator")
 
-//////////////////////////////////////////////// REGISTER
-app.post("/signup", function (req, res) {    
+app.post("/signup", function (req, res) {
   if (administrators.checkInputDataNULL(req, res)) return false;
   if (administrators.checkInputDataQuality(req, res)) return false;
   var dbFunctions = require("./models/connectSmarts");
@@ -27,8 +26,10 @@ app.post("/login", function (req, res) {
   dbFunctions.loginUser(req, res);
 });
 
-///////////////////////////////////////////////// ACCESS
-var myObj = { firsname : "John", lastname : "Doe" };
+
+
+
+var myObj = { firsname: "Nikolas", lastname: "Leon" };
 console.log(myObj);
 
 const PORT = process.env.PORT || 3000;

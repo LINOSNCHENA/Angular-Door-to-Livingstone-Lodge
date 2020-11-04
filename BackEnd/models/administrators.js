@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+////////////////////////////////////////////////////
 var pool = mysql.createPool({
   connectionLimit: 10,
   host: process.env.DB_HOST,
@@ -14,8 +15,9 @@ pool.getConnection(function (error, connection) {
     console.log("Connected ADMIN!:)");
   }
 });
-
 module.exports = pool;
+
+///////////////////////////////////////////////////////
 var connection = mysql.createPool({
   connectionLimit: 10,
   host: process.env.DB_HOST,
