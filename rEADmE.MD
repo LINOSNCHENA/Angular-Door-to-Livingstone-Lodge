@@ -1,12 +1,12 @@
-#  NodeJS Frontend and Backend implementation  - 
+#  NodeJS Frontend and Backend implementation  -  FRONTEND VERSION #2
 
-## Tech stack
-
+## Techechnology stack 
+ 
 1. Backend  - NodeJs
 2. Backend  - ExpressJS
 3. FrontEnd - Angular +10
 
-## Execution Commands
+## Execution commands
 
 To use this application, move into the root folder where there is the server. Execution the following commands.
 
