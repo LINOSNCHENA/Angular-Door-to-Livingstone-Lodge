@@ -14,13 +14,15 @@ To use this application, move into the root folder where there is the server. Ex
 
 cd FRONTEND
 -------------------------------------
-npm install
 npm install rxjs-compat
-npm start
+npm install
+npm START
+------------------------------------
 npm test
 
+
 cd BACKEND
------------------------------------
+------------------------------------
 npm install express
 npm install mysql
 npm install nodemon -g
