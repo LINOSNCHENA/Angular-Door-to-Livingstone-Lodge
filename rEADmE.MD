@@ -1,4 +1,4 @@
-#  NodeJS Frontend and Backend implementation
+#  NodeJS Frontend and Backend implementation  - 
 
 ## Tech stack
 
@@ -37,5 +37,7 @@ nodemon START
 ## Interface U-Xperience
 
 Below are some screens shots from the application console
-![ AMuntu #1 ](https://github.com/LINOSNCHENA/NodeAPI-Present-Mysql-Model-Implemented-FS1/blob/master/uxViews/page1.png)
-![ AMuntu #2 ](https://github.com/LINOSNCHENA/NodeAPI-Present-Mysql-Model-Implemented-FS1/blob/master/uxViews/page2.png)
+
+![ AMuntu #2 ](https://github.com/LINOSNCHENA/Angular-Three-API-backends-in-two-frontends-FS7/blob/master/uxViews/page1.png)
+![ AMuntu #2 ](https://github.com/LINOSNCHENA/Angular-Three-API-backends-in-two-frontends-FS7/blob/master/uxViews/page2.png)
+![ AMuntu #2 ](https://github.com/LINOSNCHENA/Angular-Three-API-backends-in-two-frontends-FS7/blob/master/uxViews/page3.png)
