@@ -1,4 +1,4 @@
-#  NodeJS Frontend and Backend implementation  -  FRONTEND VERSION #2
+#  Frontend #2 and NodeJS Backend implementation 
 
 ## Techechnology stack 
  
