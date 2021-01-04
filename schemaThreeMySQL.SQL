@@ -1,5 +1,4 @@
-SET time_zone
-= "+02:00";
+SET time_zone = "-7:00";
 use presly;
 
 DROP TABLE IF EXISTS `users`;
@@ -7,20 +6,20 @@ CREATE TABLE `users`
 (
     id serial AUTO_INCREMENT PRIMARY KEY,
     fname VARCHAR
-(70) default 'firstMalema',
+(70) default 'Nelson',
     lname VARCHAR
-(70) default 'lastname',
+(70) default 'Noria',
     email VARCHAR
 (70) NOT NULL,
     mobile VARCHAR
 (70) default 'm7895766895N',
     gender VARCHAR
-(76) default 'FemaleSex',
+(76) default 'female',
     password VARCHAR
 (650) NOT NULL,
 
     office VARCHAR
-(70) default 'o83646183471n',
+(70) default '+7983646183471n',
     createdat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     UNIQUE
@@ -32,8 +31,8 @@ INSERT INTO users
 VALUES
   ('Marvin', 'nikolas.marvin@yahoo.com', 'M30775263158', "Nikolas"),
   ('Nikolas', 'Lorena.marvin@gmail.com', 'L230775263158', "Leon"),
-  ('Marvin', 'Leon.nathy@ygoogle.com', 'N230775263158', "'Lorena"),
-  ('Leon', 'cathy.Noria@yahoo.com', 'W230775263158', "Marvin");
+  ('Marvin', 'cathy.leon@ygoogle.com', 'N230775263158', "'Lorena"),
+  ('Leon', 'noria.nelson@yahoo.com', 'W230775263158', "Marvin");
 
 
 ----------------------------------------------
@@ -62,8 +61,8 @@ CREATE TABLE `bookings`
 INSERT INTO `bookings` (`name`,`town`, `hotel`, `isactive`) VALUES
 ('Lorena', 'Vasteras', 'Mabvuto-H', 2011),
 ('Leon', 'Prague', 'Intercontinetal', 2012),
-('Marvin', 'Prague', 'Booking-3', 2013),
-('Nikolas', 'Amsterdam', 'Booking-4', 2014),
+('Marvin', 'Prague', 'Pamolive', 2013),
+('Nikolas', 'Amsterdam', 'Excellence', 2014),
 ('Xstina', 'Vasteras', 'Manda-Hill', 2015);
 
 ----------------------------------------------
@@ -91,10 +90,10 @@ CREATE TABLE `employees`
 
 INSERT INTO `employees` (`id`,`name`, `mobile`, `email`, `office`) VALUES
 (1, 'Habenzu', '920202020', 'benzo@ben.com', 2001),
-(3, 'James', 'm9284857848', 'james@yahoo.com', 2002),
-(4, 'Lukus', '3473473473', 'lukus@yahoo.com', 2003),
-(5, 'BenJamin', '3473463463', 'benjamin@gmai.com', 2004),
-(6, 'Kennedy', '34783473573', 'kenedy@ken.cok', 2005),
+(3, 'James', 'm9284857848', 'stiven.chanzi@ntb.zm', 2002),
+(4, 'Lukus', '3473473473', 'lukus.ncena@lsk.zm', 2003),
+(5, 'BenJamin', '3473463463', 'benjamin.jon@uth.com', 2004),
+(6, 'Kennedy', '34783473573', 'kenedy.sa@ken.cok', 2005),
 (7, 'Lushana', '3734745734', 'lushana@lush.com', 2006);
 
 ----------------------------------------------
