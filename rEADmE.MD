@@ -1,4 +1,4 @@
-#  Angular Frontend and NodeJS Backend CRUD implementation 
+#  Angular-10 and NodeJS CRUD implementation 
 
 ## Techechnology stack  
 1. Backend  - NodeJs
