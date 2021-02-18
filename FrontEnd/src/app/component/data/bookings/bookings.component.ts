@@ -3,7 +3,6 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Booking } from '../../datasources/models/bookings';
 import { BkgserviceService } from '../../datasources/serviceApi/bkgservice.service';
 
-
 @Component({
   selector: 'app-bookings',
   templateUrl: './bookings.component.html',
@@ -49,7 +48,7 @@ export class BookingsComponent implements OnInit {
     });
   }
   
-  deletefnc(id)
+  deletefnc(id: string)
   {
       this.service.deleteData(id).subscribe(() => { 
       this.deletemsg = "1 Record Deleted" ;
@@ -57,7 +56,7 @@ export class BookingsComponent implements OnInit {
     });
   }
 
-  editData(id)
+  editData(id: string)
   {
       this.service.editValue(id).subscribe(data => { 
       this.profileForm.patchValue(data[0]);
@@ -67,7 +66,7 @@ export class BookingsComponent implements OnInit {
     });
   }
   
-  onUpdate(id)
+  onUpdate(id: string)
   {
     this.service.updateData(id,this.profileForm.value ).subscribe(data =>{
       this.msgs = data;
@@ -75,6 +74,5 @@ export class BookingsComponent implements OnInit {
       this.profileForm.reset();
         });
   }
-
 
 }

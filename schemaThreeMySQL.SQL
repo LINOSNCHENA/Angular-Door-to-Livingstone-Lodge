@@ -6,19 +6,12 @@ CREATE TABLE `userupdated`
 (
     id serial AUTO_INCREMENT PRIMARY KEY,
     fname VARCHAR
-(70) default 'Nelson',
-    lname VARCHAR
-(70) default 'Noria',
-    email VARCHAR
-(70) NOT NULL,
-    mobile VARCHAR
-(70) default 'm7895766895N',
-    gender VARCHAR
-(76) default 'female',
-    password VARCHAR
-(650) NOT NULL,
-
-    office VARCHAR
+(70) default 'Nelson',    lname VARCHAR
+(70) default 'Noria',    email VARCHAR
+(70) NOT NULL,    mobile VARCHAR
+(70) default 'm7895766895N',    gender VARCHAR
+(76) default 'female',    password VARCHAR
+(650) NOT NULL,    office VARCHAR
 (70) default '+7983646183471n',
     createdat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -90,11 +83,10 @@ CREATE TABLE `employees`
 
 INSERT INTO `employees` (`id`,`name`, `mobile`, `email`, `office`) VALUES
 (1, 'Habenzu', '920202020', 'benzo@ben.com', 2001),
-(3, 'James', 'm9284857848', 'stiven.chanzi@ntb.zm', 2002),
-(4, 'Lukus', '3473473473', 'lukus.ncena@lsk.zm', 2003),
-(5, 'BenJamin', '3473463463', 'benjamin.jon@uth.com', 2004),
-(6, 'Kennedy', '34783473573', 'kenedy.sa@ken.cok', 2005),
-(7, 'Lushana', '3734745734', 'lushana@lush.com', 2006);
+(2, 'Lukus', '3473473473', 'lukus.ncena@lsk.zm', 2003),
+(3, 'BenJamin', '3473463463', 'benjamin.jon@uth.com', 2004),
+(4, 'Kennedy', '34783473573', 'kenedy.sa@ken.cok', 2005),
+(5, 'Lushana', '3734745734', 'lushana@lush.com', 2006);
 
 ----------------------------------------------
 -- Table structure for table `workers`
@@ -121,15 +113,13 @@ CREATE TABLE `workers`
 
 INSERT INTO `workers` (`id`,`name`, `department`, `salary`, `isactive`) VALUES
 (1, 'Kavumbu', 'SocialWorker', '599.00', 1981),
-(3, 'Drga', 'Professor', '9599.00', 1982),
-(4, 'Henang', 'Televisionist', '19599.00', 1983),
-(5, 'Mutinga', 'Academic', '29599.00', 1984),
-(6, 'Nawa', 'Friend', '599.00', 1985),
-(7, 'Grace', 'Family', '1599.00', 1986),
-(8, 'Antie Anna', 'Family', '1599.00', 1987);
+(2, 'Drga', 'Professor', '9599.00', 1982),
+(3, 'Mutinga', 'Academic', '29599.00', 1984),
+(4, 'Nawa', 'Friend', '599.00', 1985),
+(5, 'Antie Anna', 'Family', '1599.00', 1987);
 
 -- --------------------------------------------------------
 select *
-from bookings,employees,workers;
+from bookings,employees,workers,userupdated;
 -- --------------------------------------------------------
 

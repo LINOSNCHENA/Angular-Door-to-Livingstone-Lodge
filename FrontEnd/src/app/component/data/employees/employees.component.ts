@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Employee } from '../../datasources/models/employess';
-
 import { EmpserviceService } from '../../datasources/serviceApi/empservice.service';
-
 
 @Component({
   selector: 'app-employees',
@@ -20,8 +18,8 @@ export class EmployeesComponent implements OnInit {
   total: number;
   finalresults: Object;
 
-  msgs : any;
-  deletemsg : any;
+  msgs: any;
+  deletemsg: any;
   btnsubmit = true;
   btnupdate = false;
 
@@ -32,50 +30,44 @@ export class EmployeesComponent implements OnInit {
     email: new FormControl(''),
     office: new FormControl(''),
     createdat: new FormControl('')
-    });
+  });
 
-  constructor( private service: EmpserviceService) { }
+  constructor(private service: EmpserviceService) { }
 
-  ngOnInit(){
-    this.service.getData().subscribe(data => { 
-      this.finalresults = data ;
+  ngOnInit() {
+    this.service.getData().subscribe(data => {
+      this.finalresults = data;
     });
   }
 
-  onsubmit()
-  {
-    this.service.insertData(this.profileForm.value).subscribe(data =>{
+  onsubmit() {
+    this.service.insertData(this.profileForm.value).subscribe(data => {
       this.msgs = data;
       this.ngOnInit();
     });
   }
-  
-  deletefnc(id)
-  {
-      this.service.deleteData(id).subscribe(() => { 
-      this.deletemsg = "1 Record Deleted" ;
+
+  deletefnc(id: string) {
+    this.service.deleteData(id).subscribe(() => {
+      this.deletemsg = "1 Record Deleted";
       this.ngOnInit();
     });
   }
 
-  editData(id)
-  {
-      this.service.editValue(id).subscribe(data => { 
+  editData(id: string) {
+    this.service.editValue(id).subscribe(data => {
       this.profileForm.patchValue(data[0]);
       this.ngOnInit();
-      this.btnsubmit = false ;
+      this.btnsubmit = false;
       this.btnupdate = true;
     });
   }
-  
-  onUpdate(id)
-  {
-    this.service.updateData(id,this.profileForm.value ).subscribe(data =>{
+
+  onUpdate(id: string) {
+    this.service.updateData(id, this.profileForm.value).subscribe(data => {
       this.msgs = data;
       this.ngOnInit();
       this.profileForm.reset();
-        });
+    });
   }
-
-
 }
