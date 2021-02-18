@@ -1,8 +1,8 @@
 SET time_zone = "-7:00";
 use presly;
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE `users`
+DROP TABLE IF EXISTS `userupdated`;
+CREATE TABLE `userupdated`
 (
     id serial AUTO_INCREMENT PRIMARY KEY,
     fname VARCHAR
@@ -26,7 +26,7 @@ CREATE TABLE `users`
 (email,password)
 );
 
-INSERT INTO users
+INSERT INTO userupdated
   (fname,email, password, lname)
 VALUES
   ('Marvin', 'nikolas.marvin@yahoo.com', 'M30775263158', "Nikolas"),

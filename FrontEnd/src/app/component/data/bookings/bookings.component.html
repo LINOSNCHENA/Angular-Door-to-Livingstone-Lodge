@@ -68,7 +68,7 @@
     <div class="row col-sm-1"></div>
     <div class="row col-sm-6" >
   
-     <div>   <h3> DETAILS OF CLIENTS </h3>
+     <div>   <h3> DETAILS OF Bookings </h3>
       </div>
       <table class="table  table-striped table-bordered">
         <thead class="table-primary">
@@ -87,7 +87,8 @@
             <td>{{ bookings.town }}</td>
             <td>{{ bookings.hotel }}</td>
             <td>{{ bookings.isactive}}</td>
-            <td>{{ bookings.createdat}}</td>
+            <!-- <td>{{ bookings.createdat| date: 'medium'}}</td> -->
+            <td>{{bookings?.createdat| date:'medium' }}</td>
             <td>
               <a (click)=" deletefnc(bookings.id)" class="btn alert-danger btn-sm"> Delete </a>&nbsp;
               <a (click)=" editData(bookings.id)" class="btn  alert-info btn-sm">edit</a>

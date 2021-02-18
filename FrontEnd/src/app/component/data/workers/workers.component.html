@@ -14,7 +14,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href=#>Contact Us</a>
+        <a class="nav-link" href=#>Contact Us-Exit</a>
       </li>
     </ul>
   </div>
@@ -85,7 +85,7 @@
             <td>{{ workers.department }}</td>
             <td>{{ workers.salary}}</td>
             <td>{{ workers.isactive}}</td>
-            <td>{{ workers.createdat }}</td>
+                    <td>{{workers?.createdat| date:'medium' }}</td>
             <td>
               <a (click)=" deletefnc(workers.id)" class="btn alert-danger btn-sm"> Delete </a>&nbsp;
               <a (click)=" editData(workers.id)" class="btn  alert-info btn-sm">edit</a>

@@ -69,7 +69,7 @@
     <div class="row col-sm-1"></div>
     <div class="row col-sm-6">
       <div>
-        <h3> DETAILS OF ADMINISTRATORS </h3>
+        <h3> DETAILS OF employeeS </h3>
       </div>
       <table class="table  table-striped table-bordered">
         <thead class="table-primary">
@@ -89,7 +89,7 @@
             <td>{{ employees.email}}</td>
             <td>{{ employees.mobile }}</td>         
             <td>{{ employees.office}}</td>
-            <td>{{ employees.createdat}}</td>
+              <td>{{ employees?.createdat| date:'medium' }}</td>
             <td>
               <a (click)=" deletefnc(employees.id)" class="btn alert-danger btn-sm"> Delete </a>&nbsp;
               <a (click)=" editData(employees.id)" class="btn  alert-info btn-sm">edit</a>

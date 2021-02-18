@@ -21,7 +21,7 @@ module.exports = {
       if (err) throw err; // not connected!
 
       password(req.body.inputPassword).hash(function (error, hash) {
-        var sql = "INSERT INTO Users SET ?";
+        var sql = "INSERT INTO userupdated SET ?";
         var values = {
           email: req.body.inputEmail,
           password: hash,
@@ -37,7 +37,7 @@ module.exports = {
           } else return res.send(resultsFound);
         });
         connection.release(); // Handle error after the release.
-        if (error) throw error; // Don't use the connection here, it has been returned to the pool.
+        if (error) throw error; // No pool
       });
     });
   },
@@ -47,7 +47,7 @@ module.exports = {
     pool.getConnection(function (err, connection) {
       if (err) throw err; // not connected!
 
-      var sql = "SELECT * FROM `Users` WHERE `email` = ?";
+      var sql = "SELECT * FROM `userupdated` WHERE `email` = ?";
       var values = [req.body.inputEmail];
       // Use the connection
       connection.query(sql, values, function (error, results, fields) {
@@ -90,7 +90,7 @@ module.exports = {
     pool.getConnection(function (err, connection) {
       if (err) throw err; // not connected!
 
-      var sql = "SELECT * FROM `Users` WHERE `email` = ?";
+      var sql = "SELECT * FROM `userupdated` WHERE `email` = ?";
       var values = [input];
       // Use the connection
       connection.query(sql, values, function (error, results, fields) {
