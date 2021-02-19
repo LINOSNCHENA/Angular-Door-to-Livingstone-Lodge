@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { WrkserviceService } from '../../datasources/serviceApi/wrkservice.service';
+import { WrkserviceService } from '../../../servicesUnprotected/serviceApi/wrkservice.service';
 
 @Component({
   selector: 'app-workers',

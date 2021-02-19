@@ -40,4 +40,10 @@ Below are some screens shots from the application console
 ![Muntu#7 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page7.png)
 ![Muntu#8 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page2.png)
 
+# Versioning
+      Name                               Version                  Command to update
+     --------------------------------------------------------------------------------
+      @angular/cli                       10.2.0 -> 11.2.1         ng update @angular/cli
+      @angular/core                      10.2.0 -> 11.2.1         ng update @angular/core
+
 # END

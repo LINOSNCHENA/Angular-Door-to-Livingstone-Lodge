@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/servicesUtilities/api.service';
+import { ApiService } from 'src/app/servicesProtected/api.service';
 
 @Component({
   selector: 'app-signup',

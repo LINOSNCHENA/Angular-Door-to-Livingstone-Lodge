@@ -16,13 +16,13 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { WorkersComponent } from './component/data/workers/workers.component';
 import { EmployeesComponent } from './component/data/employees/employees.component';
 import { BookingsComponent } from './component/data/bookings/bookings.component';
-import { HttpErrorHandler } from './component/datasources/serviceApi/http-error-handler.services';
-import { MessageService } from './component/datasources/serviceApi/message.service';
-import { AuthGuardService } from './servicesUtilities/auth-guard.service';
+import { HttpErrorHandler } from './servicesUnprotected/serviceApi/http-error-handler.services';
+import { MessageService } from './servicesUnprotected/serviceApi/message.service';
+import { AuthGuardService } from './servicesProtected/auth-guard.service';
 
-import { BkgserviceService } from './component/datasources/serviceApi/bkgservice.service';
-import { EmpserviceService } from './component/datasources/serviceApi/empservice.service';
-import { WrkserviceService } from './component/datasources/serviceApi/wrkservice.service';
+import { BkgserviceService } from './servicesUnprotected/serviceApi/bkgservice.service';
+import { EmpserviceService } from './servicesUnprotected/serviceApi/empservice.service';
+import { WrkserviceService } from './servicesUnprotected/serviceApi/wrkservice.service';
 
 @NgModule({
   declarations: [

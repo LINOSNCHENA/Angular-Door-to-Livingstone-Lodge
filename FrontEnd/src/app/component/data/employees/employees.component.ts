@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Employee } from '../../datasources/models/employess';
-import { EmpserviceService } from '../../datasources/serviceApi/empservice.service';
+import { Employee } from '../../../servicesUnprotected/models/employess';
+import { EmpserviceService } from '../../../servicesUnprotected/serviceApi/empservice.service';
 
 @Component({
   selector: 'app-employees',

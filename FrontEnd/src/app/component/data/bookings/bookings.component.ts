@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { Booking } from '../../datasources/models/bookings';
-import { BkgserviceService } from '../../datasources/serviceApi/bkgservice.service';
+import { Booking } from '../../../servicesUnprotected/models/bookings';
+import { BkgserviceService } from '../../../servicesUnprotected/serviceApi/bkgservice.service';
 
 @Component({
   selector: 'app-bookings',

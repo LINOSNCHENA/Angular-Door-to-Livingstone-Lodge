@@ -7,7 +7,7 @@ import { WorkersComponent } from './component/data/workers/workers.component';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
-import { AuthGuardService as AuthGuard } from "./servicesUtilities/auth-guard.service";
+import { AuthGuardService as AuthGuard } from "./servicesProtected/auth-guard.service";
 
 const routes: Routes = [
   { path: "", redirectTo: "login", pathMatch: "full" },
