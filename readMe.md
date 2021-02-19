@@ -38,12 +38,13 @@ Below are some screens shots from the application console
 ![Muntu#5 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page5.png)
 ![Muntu#6 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page6.png)
 ![Muntu#7 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page7.png)
-![Muntu#8 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page2.png)
+![Muntu#8 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page8.png)
 
 # Versioning
+```
       Name                               Version                  Command to update
      --------------------------------------------------------------------------------
       @angular/cli                       10.2.0 -> 11.2.1         ng update @angular/cli
       @angular/core                      10.2.0 -> 11.2.1         ng update @angular/core
-
+```
 # END
