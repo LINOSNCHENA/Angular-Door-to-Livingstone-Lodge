@@ -70,7 +70,7 @@
             <td>Name</td>
             <td>Email</td>
             <td>Mobile no.</td>
-            <td>Office no.</td>
+            <!-- <td>Office no.</td> -->
             <td>CreatedAt</td>
             <td>Actions</td>
           </tr>
@@ -80,7 +80,7 @@
             <td>{{ employees.name }}</td>
             <td>{{ employees.email}}</td>
             <td>{{ employees.mobile }}</td>
-            <td>{{ employees.office}}</td>
+            <!-- <td>{{ employees.office}}</td> -->
             <td>{{ employees?.createdat| date:'medium' }}</td>
             <td>
               <a (click)=" deletefnc(employees.id)" class="btn alert-danger btn-sm"> Delete </a>&nbsp;

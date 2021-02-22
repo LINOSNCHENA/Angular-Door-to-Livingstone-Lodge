@@ -26,9 +26,6 @@ app.post("/login", function (req, res) {
   dbFunctions.loginUser(req, res);
 });
 
-
-
-
 var myObj = { firsname: "Nikolas", lastname: "Leon" };
 console.log(myObj);
 

@@ -53,29 +53,29 @@ connection.getConnection(function (error, connection) {
     var sqlDelete4 = "DROP TABLE IF EXISTS WORKERS";
 
     var sqlPop1 = "INSERT INTO `userupdated`(fname,email, password, lname)VALUES ('Marvin', 'ls.marvin@yahoo.com',"+
-    " 'M30775263158', 'Nikolas'),  ('Nikolas', 'Lorena.marvin@gmail.com', 'L230775263158', 'Leon');";
+    " 'M30775263158', 'Nikolas'),  ('Leon', 'Lena.marvin@gmail.com', 'L230775263158', 'Leon');";
     var sqlPop2 = "INSERT INTO `bookings` (`name`,`town`, `hotel`, `isactive`) VALUES "+
-    " ('Lorena', 'Vasteras', 'Mabvuto-H', 2011),  ('Leon', 'Prague', 'Intercontinetal', 2012);";
+    " ('Lorena', 'Vasteras', 'Mango', 2011),  ('Leon', 'Prague', 'Intercontinetal', 2012);";
     var sqlPop3 = "INSERT INTO `employees` (`id`,`name`, `mobile`, `email`, `office`) VALUES "+
-    " (1, 'MARVIN', '920202020', 'benzo@ben.com', 2001),  (2, 'XRISTINA', 'm9284857848', 'stiven.chanzi@ntb.zm', 2002);";
+    " (1, 'Marvin', '920202020', 'benzo@ben.com', 2001),  (2, 'Xristina', 'm928448', 'stiv.c@ntb.zm', 2002);";
     var sqlPop4 = "INSERT INTO `workers` (`id`,`name`, `department`, `salary`, `isactive`) VALUES "+
-    " (1, 'PRESLY', 'HEADMASTER', '599.02', 1981), (2, 'CATHERINE', 'Professor', '9599.04', 1982);";
+    " (1, 'Presly', 'HeadTeacher', '599.02', 1981), (2, 'Kathyrine', 'Professor', '9599.04', 1982);";
 
-    connection.query(sqlDelete1, function (err, result) { if (err) throw err; console.log("01-TUSER Formated!"); });
-    connection.query(sqlDb1, function (err, result) { if (err) throw err; console.log("02-TUSER created!"); });
-    connection.query(sqlPop1, function (err, result) { if (err) throw err; console.log("03-TUSER populated!"); });
+    connection.query(sqlDelete1, function (err) { if (err) throw err; console.log("01-TUSER Formated!"); });
+    connection.query(sqlDb1, function (err) { if (err) throw err; console.log("02-TUSER created!"); });
+    connection.query(sqlPop1, function (err) { if (err) throw err; console.log("03-TUSER populated!"); });
 
-    connection.query(sqlDelete2, function (err, result) { if (err) throw err; console.log("04-TBOOKING Formated!"); });
-    connection.query(sqlDb2, function (err, result) { if (err) throw err; console.log("05-TBOOKING created!"); });
-    connection.query(sqlPop2, function (err, result) { if (err) throw err; console.log("06-TBOOKING populated!"); });
+    connection.query(sqlDelete2, function (err, _result) { if (err) throw err; console.log("04-TBOOKING Formated!"); });
+    connection.query(sqlDb2, function (err, _result) { if (err) throw err; console.log("05-TBOOKING created!"); });
+    connection.query(sqlPop2, function (err, _result) { if (err) throw err; console.log("06-TBOOKING populated!"); });
 
-    connection.query(sqlDelete3, function (err, result) { if (err) throw err; console.log("07-TEMPLOYEES Formated!"); });
-    connection.query(sqlDb3, function (err, result) { if (err) throw err; console.log("08-TEMPLOYEES created!"); });
-    connection.query(sqlPop3, function (err, result) { if (err) throw err; console.log("09-TEMPLOYEES populated!"); });
+    connection.query(sqlDelete3, function (err) { if (err) throw err; console.log("07-TEMPLOYEES Formated!"); });
+    connection.query(sqlDb3, function (err) { if (err) throw err; console.log("08-TEMPLOYEES created!"); });
+    connection.query(sqlPop3, function (err) { if (err) throw err; console.log("09-TEMPLOYEES populated!"); });
 
-    connection.query(sqlDelete4, function (err, result) { if (err) throw err; console.log("10-TWORKERS Formated!"); });
-    connection.query(sqlDb4, function (err, result) { if (err) throw err; console.log("11-TWORKERS created!"); });
-    connection.query(sqlPop4, function (err, result) { if (err) throw err; console.log("12-TWORKERS populated!"); });
+    connection.query(sqlDelete4, function (err, _result) { if (err) throw err; console.log("10-TWORKERS Formated!"); });
+    connection.query(sqlDb4, function (err, _result) { if (err) throw err; console.log("11-TWORKERS created!"); });
+    connection.query(sqlPop4, function (err, _result) { if (err) throw err; console.log("12-TWORKERS populated!"); });
 
     console.log('You are connected on (THIRD) SERVER C');
   }

@@ -1,14 +1,15 @@
-#  Angular-10 and NodeJS CRUD implementation 
+#  Angular-10 and NodeJS CRUD implementation - FLATFORM
 
-## Techechnology stack  
+## Technology stack  
 
 1. Backend  - NodeJs
-2. Backend  - ExpressJS
+2. Server   - ExpressJS
 3. FrontEnd - Angular +10
+4. Security - jsonwebtoken(V)
 
 ## Execution commands
 
-To use this application, run the following commands.
+To use this application, run the following commands in respective root folders.
 
 ```
 cd FRONTEND \
@@ -40,7 +41,7 @@ Below are some screens shots from the application console
 ![Muntu#7 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page7.png)
 ![Muntu#8 ](https://github.com/LINOSNCHENA/NodeJS-Angular-three-clients-App/blob/master/uxViews/page8.png)
 
-# Versioning
+# Versioning -(Pending Upgrade)
 ```
       Name                               Version                  Command to update
      --------------------------------------------------------------------------------

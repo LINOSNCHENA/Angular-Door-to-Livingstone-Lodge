@@ -1,5 +1,5 @@
  require('./connectsAdmin');
-require('./administrators');
+require('./admAndPopulate');
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');

@@ -1,4 +1,4 @@
-const pool = require('./administrators');
+const pool = require('./admAndPopulate');
 var password = require('password-hash-and-salt');
 const jwt = require('jsonwebtoken');
 
